@@ -1,3 +1,78 @@
-h1 {
-    background-color: green;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.card p span {
+    color: #2d3748;
+}
+
+.card button.edit-btn {
+    background: none;
+    border: none;
+    color: #3182ce;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.card button.edit-btn:hover {
+    color: #2b6cb0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.card button.calc-btn {
+    background-color: #3182ce;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button.calc-btn:hover {
+    background-color: #2b6cb0;
 }

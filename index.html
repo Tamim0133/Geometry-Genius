@@ -10,11 +10,98 @@
 </head>
 
 <body>
-    <h1>We are up and running!</h1>
-    <p class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum excepturi ea quasi
-        unde! Facere
-        pariatur voluptate minima non quasi. Dolor blanditiis enim doloremque dicta deserunt tempora nemo aperiam? A?
-    </p>
+    <header>
+        <h3 class="text-6xl m-10">Calculate Area of different shapes easily !</h3>
+    </header>
+    <main>
+        <section class="container mx-auto grid lg:grid-cols-3">
+            <!-- Triangle -->
+            <div class="card">
+                <div>
+                    <img src="images/triangle.png" alt="Triangle" class="mx-auto h-64 mb-5">
+                </div>
+                <h2>Triangle</h2>
+                <p>
+                    Area (A) = 0.5 × b × h <br />
+                    <span>b = <span id="inputBaseTriangle">4</span> cm h = <span id="inputHeightTriangle">6</span>
+                        cm</span> <br>
+                    <span>area = "<span id="areaResultTriangle">12</span>" cm <sup>2</sup></span>
+                </p>
+
+                <div class="form-group">
+                    <label>Base (b)</label>
+                    <input type="number" id="baseTriangle" placeholder="b cm">
+                </div>
+
+                <div class="form-group">
+                    <label>Height (h)</label>
+                    <input type="number" id="heightTriangle" placeholder="h cm">
+                </div>
+
+                <button class="calc-btn" onclick="areaCalculateTriangle()">Calculate</button>
+            </div>
+            <!-- Rectangle -->
+            <div class="card">
+                <div>
+                    <img src="images/rectangle.png" alt="Triangle" class="mx-auto mb-5 h-64">
+                </div>
+                <h2>Rectangle</h2>
+                <p>
+                    Area (A) = b × h <br />
+                    <span>b = <span id="inputBaseRectangle">4</span> cm h = <span id="inputHeightRectangle">6</span>
+                        cm</span> <br>
+                    <span>area = "<span id="areaResultRectangle">24</span>" cm <sup>2</sup></span>
+                </p>
+
+                <div class="form-group">
+                    <label>Base (b)</label>
+                    <input type="number" id="baseRectangle" placeholder="b cm">
+                </div>
+
+                <div class="form-group">
+                    <label>Height (h)</label>
+                    <input type="number" id="heightRectangle" placeholder="h cm">
+                </div>
+
+                <button class="calc-btn" onclick="areaCalculateRectangle()">Calculate</button>
+            </div>
+            <!-- Parallelogram -->
+            <div class="card">
+                <div>
+                    <img src="images/parallelogram.png" alt="Triangle" class="mx-auto mb-5 h-64">
+                </div>
+                <h2>Parallelogram</h2>
+                <p>
+                    Area (A) = b × h <br />
+                    <span>b = <span id="inputBaseParallelogram">4</span> cm h = <span
+                            id="inputHeightParallelogram">6</span>
+                        cm</span> <br>
+                    <span>area = "<span id="areaResultParallelogram">24</span>" cm <sup>2</sup></span>
+                </p>
+
+                <div class="form-group">
+                    <label>Base (b)</label>
+                    <input type="number" id="baseParallelogram" placeholder="b cm">
+                </div>
+
+                <div class="form-group">
+                    <label>Height (h)</label>
+                    <input type="number" id="heightParallelogram" placeholder="h cm">
+                </div>
+
+                <button class="calc-btn" onclick="areaCalculateParallelogram()">Calculate</button>
+            </div>
+        </section>
+        <!-- History Section -->
+        <section class="container mx-auto m-10">
+            <h2 class="text-6xl ">History</h2>
+            <ul id="historyList" class="list-disc ml-5">
+                <!-- History will be dynamically inserted here -->
+            </ul>
+        </section>
+
+    </main>
+    <footer></footer>
 
     <script src="index.js"></script>
 </body>
