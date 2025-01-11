@@ -13,7 +13,7 @@ function areaCalculateTriangle()
     } 
     else {
 
-        const area = baseNumber * heightNumber;
+        const area = 0.5 * baseNumber * heightNumber;
         document.getElementById("areaResultTriangle").innerText = area;
         document.getElementById("inputBaseTriangle").innerText = baseNumber;
         document.getElementById("inputHeightTriangle").innerText = heightNumber;
